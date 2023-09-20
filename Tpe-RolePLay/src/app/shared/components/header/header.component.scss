@@ -1,0 +1,62 @@
+/* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Estilos para los elementos de la izquierda */
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.home-link img {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.search-input {
+  background-color: #7E7E7E;
+  border: 1px solid #fff;
+  padding: 5px;
+  margin-left: 16px;
+  height: auto;
+}
+.search-input::placeholder {
+  color: #fff; /* Cambia este valor al color que desees para el placeholder */
+}
+/* Estilos para los elementos de la derecha */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin-right: 20px;
+}
+
+.profile-icon {
+  width: 24px;
+  height: 24px;
+}
