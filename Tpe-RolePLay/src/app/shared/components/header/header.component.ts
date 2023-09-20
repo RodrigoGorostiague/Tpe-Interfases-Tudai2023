@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isOpen = false;
 
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
+  }
+
+  @HostListener('document:click', ['$event'])
+  closeMenuOnClickOutside(event: Event) {
+    console.log(this.isOpen);
+    if (this.isOpen) {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.menu') && !target.closest('.menu-button')) {
+        this.isOpen = false;
+      }
+    }
+  }
 }
