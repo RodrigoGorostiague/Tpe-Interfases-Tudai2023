@@ -4,17 +4,17 @@
       Iniciar Sesión
     </div>
     <div class="card-body">
-      <form>
+      <form [formGroup]="loginForm">
         <div class="form-group">
           <label for="email">Correo Electrónico</label>
-          <input type="email" id="email" class="form-control" placeholder="Correo Electrónico" required>
+          <input type="email" id="email" class="form-control" placeholder="Correo Electrónico" formControlName="email" required>
         </div>
         <div class="form-group">
           <label for="password">Contraseña</label>
-          <input type="password" id="password" class="form-control" placeholder="Contraseña" required>
+          <input type="password" id="password" class="form-control" placeholder="Contraseña" formControlName="password" required>
         </div>
-        <button class="btn btn-primary" (click)="login()">Iniciar Sesión</button>
-        <button class="btn btn-secondary" (click)="register()">Registrarse</button>
+        <button class="btn btn-primary" type="button" (click)="login()">Iniciar Sesión</button>
+        <button class="btn btn-secondary" type="button" (click)="register()">Registrarse</button>
       </form>
     </div>
     <div class="card-footer">

@@ -9,6 +9,7 @@ import { MainComponent } from './shared/components/pages/main/main.component';
 import { MenuComponent } from './shared/components/menu/menu.component';
 import { LoginComponent } from './shared/components/pages/login/login.component';
 import { SinginComponent } from './shared/components/pages/singin/singin.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { SinginComponent } from './shared/components/pages/singin/singin.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
