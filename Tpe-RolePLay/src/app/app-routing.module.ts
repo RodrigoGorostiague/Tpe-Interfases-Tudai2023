@@ -5,6 +5,8 @@ import { LoginComponent } from './shared/components/pages/login/login.component'
 
 const routes: Routes = [
   { path: '', component: LoginComponent  },
+  { path: 'login', component: LoginComponent  },
+  { path: 'singin', component: LoginComponent  },
   { path: 'home', component: MainComponent  },
   { path: '**', component: LoginComponent  },
 ];

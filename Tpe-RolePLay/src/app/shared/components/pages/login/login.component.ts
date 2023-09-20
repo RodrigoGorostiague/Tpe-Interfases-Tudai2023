@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,11 +10,15 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
 
+  constructor(
+    private route: Router
+  ) { }
+
   login() {
-    // Implementa la lógica para iniciar sesión aquí.
+    this.route.navigate(['/home']);
   }
 
   register() {
-    // Implementa la lógica para registrarse aquí.
+    this.route.navigate(['/singin']);
   }
 }
