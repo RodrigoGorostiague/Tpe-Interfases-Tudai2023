@@ -7,6 +7,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { MainComponent } from './shared/components/pages/main/main.component';
 import { MenuComponent } from './shared/components/menu/menu.component';
+import { LoginComponent } from './shared/components/pages/login/login.component';
+import { SinginComponent } from './shared/components/pages/singin/singin.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { MenuComponent } from './shared/components/menu/menu.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    MenuComponent
+    MenuComponent,
+    LoginComponent,
+    SinginComponent
   ],
   imports: [
     BrowserModule,
