@@ -1,5 +1,6 @@
 .ventana-juego-container {
     background-color: #7E7D7D;
+    padding-bottom: 50px;
 }
 
 .simulacion-juego {
@@ -20,6 +21,42 @@
     text-transform: uppercase;
 }
 
-a:visited{
+a:visited {
     color: white;
+}
+
+.instrucciones-container {
+    width: 304px;
+    height: 444px;
+    padding: 5px;
+    flex-shrink: 0;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
+}
+
+.juego-e-intrucciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-gif {
+    width: 262px;
+    height: 177px;
+    flex-shrink: 0;
+}
+
+
+.name-container{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.share-btn {
+    background-color: #373737;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
 }
