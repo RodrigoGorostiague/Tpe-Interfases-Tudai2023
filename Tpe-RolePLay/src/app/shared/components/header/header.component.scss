@@ -11,12 +11,12 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  min-height: 80px;
 }
 
 /* Estilos para los elementos de la izquierda */
 .left {
+  padding: 10px 20px;
   display: flex;
   align-items: center;
 }
@@ -36,10 +36,11 @@
 }
 
 
-.home-link img {
+.home-link{
   width: 24px;
   height: 24px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .search-input {
@@ -54,6 +55,7 @@
 }
 /* Estilos para los elementos de la derecha */
 .right {
+  padding: 10px 20px;
   display: flex;
   align-items: center;
 }
@@ -65,4 +67,8 @@
 .profile-icon {
   width: 24px;
   height: 24px;
+}
+
+a:visited{
+  color: white;
 }

@@ -2,12 +2,11 @@
   <div class="left">
       <button class="menu-button" (click)="toggleMenu()">&#9776;</button>
       <app-menu [isOpen]="isOpen" [ngClass]="{ 'open': isOpen }"></app-menu>
-      <i class="icon-group-7 home-link" style="font-size: 60px;"></i>
       <input type="text" class="search-input" placeholder="'GTA V'">
   </div>
+  <a href="/home"><i class="icon-group-7 home-link" style="font-size: 60px;"></i></a>
   <div class="right">
-      <span class="user-name">Bienvenido Carlitos</span>
-      <img alt="Perfil" class="profile-icon">
+      <span class="user-name"><span style="font-size: 12px;">Bienvenido a Role Play,</span> Carlitos</span>
   </div>
 </nav>
 <app-progress-bar [progress]="0"></app-progress-bar>

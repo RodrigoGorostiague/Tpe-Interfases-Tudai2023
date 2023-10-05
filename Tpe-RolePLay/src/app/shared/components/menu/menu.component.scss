@@ -8,6 +8,7 @@
   color: #fff;
   padding: 20px;
   transition: left 0.3s ease; /* Transición suave para el desplazamiento */
+  z-index: 999;
 }
 
 .open {
@@ -20,6 +21,14 @@ ul {
 }
 
 li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 10px 0;
   cursor: pointer;
+  padding-top: 10px;
+}
+
+.game-categories li{
+  font-size: 12px;
 }

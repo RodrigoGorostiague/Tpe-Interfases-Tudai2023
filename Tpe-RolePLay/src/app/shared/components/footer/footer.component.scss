@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
 }
 
 /* Estilos para la columna izquierda */
@@ -50,4 +51,11 @@
 .links{
   width: 50%;
   display: flex;
+}
+.social-icons{
+  position: absolute;
+  bottom: 10px;
+  right: 18px;
+  display: flex;
+  flex-direction: row;
 }
