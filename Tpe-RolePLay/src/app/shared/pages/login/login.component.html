@@ -17,6 +17,8 @@
         <button class="btn btn-secondary" type="button" (click)="register()">Registrarse</button>
       </form>
     </div>
+    <span *ngIf="valido == false" class="hint">Complete todos los campos</span>
+    <span *ngIf="error == false" class="hint">No se encuentra registrado</span>
     <div class="card-footer">
       <a routerLink="/forgot-password">¿Olvidaste tu contraseña? Recuperar</a>
     </div>

@@ -28,7 +28,13 @@
   font-size: 24px;
   cursor: pointer;
   margin-right: 20px;
+  transition: transform 0.3s ease; /* Transición suave en el efecto hover */
 }
+
+.menu-button:hover {
+  transform: scale(1.2); /* Escala el botón al 120% del tamaño original al hacer hover */
+}
+
 
 .home-link img {
   width: 24px;

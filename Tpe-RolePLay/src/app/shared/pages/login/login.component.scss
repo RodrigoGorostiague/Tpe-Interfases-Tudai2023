@@ -42,7 +42,13 @@
 /* Estilo de los botones al pasar el mouse */
 .btn-primary:hover,
 .btn-secondary:hover {
-  background-color: #000;
+  background-color: #f8f8f8;
+  color: #295454;
+  padding: 4px 20px;
+  border-left: 3px solid  orangered,;
+  padding-left: 7px;
+  transition: all 0.2s ease;
+  font-weight: 500;
 }
 
 /* Estilo de los campos de entrada */
@@ -70,4 +76,7 @@ label {
 
 .card-footer a:hover {
   text-decoration: underline;
+}
+.hint{
+  color: red;
 }

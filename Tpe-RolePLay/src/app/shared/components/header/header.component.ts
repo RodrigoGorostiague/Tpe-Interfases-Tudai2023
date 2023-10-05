@@ -7,6 +7,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   isOpen = false;
+  progress!: number;
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
@@ -22,4 +23,5 @@ export class HeaderComponent {
       }
     }
   }
+
 }

@@ -1,5 +1,8 @@
 <app-header></app-header>
 <div class="background-container">
+  <div *ngIf="loading">
+    <div class="spinner"></div>
+  </div>
   <router-outlet></router-outlet>
 </div>
-<app-footer></app-footer>
+
