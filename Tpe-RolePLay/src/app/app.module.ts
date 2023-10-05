@@ -11,6 +11,12 @@ import { MainComponent } from './shared/pages/main/main.component';
 import { MenuComponent } from './shared/components/menu/menu.component';
 import { LoginComponent } from './shared/pages/login/login.component';
 import { SinginComponent } from './shared/pages/singin/singin.component';
+import { GameCardComponent } from './shared/components/game-card/game-card.component';
+import { HomeComponent } from './shared/pages/home/home.component';
+import { SliderAccionComponent } from './shared/components/slider-accion/slider-accion.component';
+import { SliderDeportesComponent } from './shared/components/slider-deportes/slider-deportes.component';
+import { SliderPuzzleComponent } from './shared/components/slider-puzzle/slider-puzzle.component';
+import { SliderCarrerasComponent } from './shared/components/slider-carreras/slider-carreras.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,13 @@ import { SinginComponent } from './shared/pages/singin/singin.component';
     MenuComponent,
     LoginComponent,
     SinginComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    GameCardComponent,
+    HomeComponent,
+    SliderAccionComponent,
+    SliderDeportesComponent,
+    SliderPuzzleComponent,
+    SliderCarrerasComponent
   ],
   imports: [
     BrowserModule,
