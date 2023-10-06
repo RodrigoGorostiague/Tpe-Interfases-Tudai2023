@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./game-tab.component.scss']
 })
 export class GameTabComponent {
+  isModalVisible = false;
 
+  toggleModal() {
+    this.isModalVisible = !this.isModalVisible;
+  }
 }

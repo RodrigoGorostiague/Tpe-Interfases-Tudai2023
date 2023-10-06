@@ -5,7 +5,8 @@
             <h1 class="game-title">4 en línea: Milei vs Massa</h1>
             <h2 class="breadcumbs"><a href="/home">Juegos</a> > Puzzle > 4 en línea: Milei vs Massa</h2>
         </section>
-        <button class="share-btn"><img src="assets/svgs/share.svg"></button>
+        <button class="share-btn" (click)="toggleModal()"><img *ngIf="!isModalVisible" src="assets/svgs/share.svg"><img *ngIf="isModalVisible" src="assets/svgs/cancel.svg"></button>
+        <app-share-modal *ngIf="isModalVisible"></app-share-modal>
     </div>
     <div class="juego-e-intrucciones">
         <img class="simulacion-juego" src="assets/images/frame-juego.png">

@@ -45,12 +45,14 @@ a:visited {
 }
 
 
-.name-container{
+.name-container {
     display: flex;
     gap: 100px;
     align-items: center;
 }
+
 .share-btn {
+    cursor: pointer;
     background-color: #373737;
     border: none;
     border-radius: 50%;

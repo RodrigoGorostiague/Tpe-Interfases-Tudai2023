@@ -18,6 +18,7 @@ import { SliderPuzzleComponent } from './shared/components/slider-puzzle/slider-
 import { SliderCarrerasComponent } from './shared/components/slider-carreras/slider-carreras.component';
 import { GameTabComponent } from './shared/pages/game-tab/game-tab.component';
 import { ShareModalComponent } from './shared/components/share-modal/share-modal.component';
+import { ComentarioComponent } from './shared/components/comentario/comentario.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ShareModalComponent } from './shared/components/share-modal/share-modal
     SliderPuzzleComponent,
     SliderCarrerasComponent,
     GameTabComponent,
-    ShareModalComponent
+    ShareModalComponent,
+    ComentarioComponent
   ],
   imports: [
     BrowserModule,

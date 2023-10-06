@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./share-modal.component.scss']
 })
 export class ShareModalComponent {
-
+  
 }
