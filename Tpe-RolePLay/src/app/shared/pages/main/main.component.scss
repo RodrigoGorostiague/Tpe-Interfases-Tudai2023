@@ -2,7 +2,7 @@
   background-color: #7e7d7d;
   margin: 0;
   padding: 0;
-  height: 350px;
+  height: auto;
 }
 
 .spinner {
@@ -24,4 +24,9 @@
   100% {
     transform: rotate(360deg);
   }
+}
+.phrase-container{
+  position: absolute;
+  top: 50%;
+  left: 37%;
 }

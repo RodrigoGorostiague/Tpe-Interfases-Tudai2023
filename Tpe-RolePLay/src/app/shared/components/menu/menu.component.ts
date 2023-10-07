@@ -7,4 +7,7 @@ import { Component, HostListener, Input } from '@angular/core';
 })
 export class MenuComponent {
   @Input() isOpen!: boolean;
+  close(){
+    this.isOpen = false;
+  }
 }

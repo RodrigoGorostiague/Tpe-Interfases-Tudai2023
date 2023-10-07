@@ -1,1 +1,54 @@
-<p>singin works!</p>
+<div class="login-container">
+  <div class="card">
+    <div class="card-header">
+      Iniciar Sesión
+    </div>
+    <div class="card-body">
+      <form [formGroup]="loginForm">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Nombre" formControlName="nombre" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" class="form-control" placeholder="Apellido" formControlName="apellido" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="user">Nombre de Usuario</label>
+            <input type="text" id="user" class="form-control" placeholder="Usuario" formControlName="user" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Email" formControlName="email" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" class="form-control" placeholder="Edad" formControlName="edad" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" class="form-control" placeholder="Contraseña" formControlName="password" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="passwordConfirm">Repetir Contraseña</label>
+            <input type="password" id="passwordConfirm" class="form-control" placeholder="Repetir Contraseña" formControlName="passwordConfirm" required>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="button" (click)="login()">Registrarse</button>
+        <button class="btn btn-secondary" type="button" (click)="register()">Cancelar</button>
+      </form>
+    </div>
+    <span *ngIf="valido == false" class="hint">Complete todos los campos</span>
+    <span *ngIf="error == false" class="hint">No se encuentra registrado</span>
+    <div class="card-footer">
+      <span>Ya tiene cuenta? </span><a routerLink="/login">Inicia Sesion</a>
+    </div>
+  </div>
+</div>

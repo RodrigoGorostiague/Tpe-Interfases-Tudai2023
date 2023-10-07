@@ -2,7 +2,9 @@
 <div class="background-container">
   <div *ngIf="loading">
     <div class="spinner"></div>
+    <div class="phrase-container" [style.transform]="textRotation">
+      {{ phrases[currentPhraseIndex] }}
+    </div>
   </div>
-  <router-outlet></router-outlet>
-  <app-slider-deportes></app-slider-deportes>
+  <router-outlet *ngIf="!loading"></router-outlet>
 </div>
