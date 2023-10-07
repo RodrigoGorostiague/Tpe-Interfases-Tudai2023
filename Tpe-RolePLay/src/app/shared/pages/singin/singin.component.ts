@@ -27,7 +27,7 @@ export class SinginComponent {
       const password = this.loginForm.get('password')?.value;
 
       if (this.authService.login(email, password)) {
-        this.route.navigate(['/home']);
+        this.route.navigate(['/login']);
       } else {
         this.error = false; // Credenciales inválidas, puedes mostrar un mensaje de error
       }
@@ -37,6 +37,6 @@ export class SinginComponent {
   }
 
   register() {
-      this.route.navigate(['/singin']);
+      this.route.navigate(['/login']);
   }
 }
