@@ -5,7 +5,8 @@
             <h1 class="game-title">4 en línea: Milei vs Massa</h1>
             <h2 class="breadcumbs"><a href="/home">Juegos</a> > Puzzle > 4 en línea: Milei vs Massa</h2>
         </section>
-        <button class="share-btn" (click)="toggleModal()"><img *ngIf="!isModalVisible" src="assets/svgs/share.svg"><img *ngIf="isModalVisible" src="assets/svgs/cancel.svg"></button>
+        <button class="share-btn" (click)="toggleModal()"><img *ngIf="!isModalVisible" src="assets/svgs/share.svg"><img
+                *ngIf="isModalVisible" src="assets/svgs/cancel.svg"></button>
         <app-share-modal *ngIf="isModalVisible"></app-share-modal>
     </div>
     <div class="juego-e-intrucciones">
@@ -18,4 +19,22 @@
             <img src="assets/images/gif-game.gif" class="game-gif">
         </section>
     </div>
+    <section class="community-comments">
+        <h2 class="comments-title">Que opina la comunidad?</h2>
+
+        <article class="post-comment">
+            <img src="assets/svgs/menu-burger/cuenta.svg" alt="user-image" class="user-image">
+            <section  class="comment">
+                <input type="text" placeholder="Deja tu comentario sobre el juego, Carlitos">
+                <img src="assets/svgs/send.svg" class="post-btn">
+            </section>
+        </article>
+        <app-comentario name="Luquitas Rodriguez" [stars]="3" comment="Tiene una banda de bugs el jueguito"
+            imageUrl="assets/images/users/luquitas.jpg"></app-comentario>
+        <app-comentario name="El Maestro" [stars]="4"
+            comment="Gioco molto bello, 4 stelle perché necessita ancora di un po' di sviluppo"
+            imageUrl="assets/images/users/maestro.jpg"></app-comentario>
+        <app-comentario name="Messi10" [stars]="2" comment="Aburridaso"
+            imageUrl="assets/images/users/messi.jpg"></app-comentario>
+    </section>
 </div>

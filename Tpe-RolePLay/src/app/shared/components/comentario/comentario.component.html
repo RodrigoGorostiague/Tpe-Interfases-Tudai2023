@@ -1,1 +1,14 @@
-<p>comentario works!</p>
+<div class="comment-container">
+    <img [src]="imageUrl" alt="user-{{name}}" class="user-image">
+    <div class="name-and-comment">
+        <section class="name-and-stars">
+            <p>{{name}}</p>
+            <div class="stars">
+                <ng-container *ngFor="let star of starArray; let i = index">
+                    <img [src]="i < stars ? 'assets/svgs/star-filled.svg' : 'assets/svgs/star.svg'" class="star-icon">
+                </ng-container>
+            </div>
+        </section>
+        <p class="comment">{{comment}}</p>
+    </div>
+</div>

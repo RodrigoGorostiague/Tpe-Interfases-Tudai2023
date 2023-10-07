@@ -62,3 +62,62 @@ a:visited {
     width: 60px;
     height: 60px;
 }
+
+.community-comments{
+    margin-left: 91px;
+    margin-top: 82px;
+}
+
+.comments-title {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 42px;
+}
+
+.comment {
+    position: relative;
+    width: 580px;
+    padding: 10px 15px;
+    background-color: #373737;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+
+.post-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.post-comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.user-image{
+    width: 60px;
+    height: 60px;
+}
+
+.comment input{
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 500px;
+}
+
+.comment input:focus{
+    outline: none;
+}

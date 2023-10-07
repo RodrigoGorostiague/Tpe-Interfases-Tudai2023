@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-comentario',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./comentario.component.scss']
 })
 export class ComentarioComponent {
-
+  @Input() imageUrl: string = '';
+  @Input() name: string = '';
+  @Input() comment: string = '';
+  @Input() stars: number = 0;
+  starArray = [1, 2, 3, 4, 5];
 }
