@@ -1,11 +1,9 @@
-/* Reset de estilos básicos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos para la barra de navegación */
 .navbar {
   background-color: #000000;
   color: #fff;
@@ -14,7 +12,6 @@
   min-height: 80px;
 }
 
-/* Estilos para los elementos de la izquierda */
 .left {
   padding: 10px 20px;
   display: flex;
@@ -29,12 +26,10 @@
   cursor: pointer;
   margin-right: 20px;
   transition: transform 0.3s ease;
-  /* Transición suave en el efecto hover */
 }
 
 .menu-button:hover {
   transform: scale(1.2);
-  /* Escala el botón al 120% del tamaño original al hacer hover */
 }
 
 

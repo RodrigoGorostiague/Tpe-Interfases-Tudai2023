@@ -1,5 +1,5 @@
 <div class="menu"  [ngClass]="{ 'open': isOpen }">
-  <h3>Hola Carlitos</h3><button (click)="close()">x</button>
+  <button (click)="close()"><img src="assets/svgs/cancel.svg"></button>
   <ul>
     <li><img src="assets/svgs/menu-burger/heart.svg">Tus Favoritos</li>
     <li><img src="assets/svgs/menu-burger/trends.svg">Tendencias</li>
@@ -9,7 +9,7 @@
   </ul>
   <hr>
   <ul class="game-categories">
-    <li><img src="assets/svgs/menu-burger/accion.svg"><a href="/home/deportes">Deportes</a></li>
+    <li><img src="assets/svgs/menu-burger/deportes.svg"><a href="/home/deportes">Deportes</a></li>
     <li><img src="assets/svgs/menu-burger/race.svg"><a href="/home/cerreras">Carreras</a></li>
     <li><img src="assets/svgs/menu-burger/accion.svg"><a href="/home/accion">Acción</a></li>
     <li><img src="assets/svgs/menu-burger/puzzle.svg"><a href="/home/puzzle">Puzzle</a></li>
