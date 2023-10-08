@@ -1,12 +1,15 @@
 <nav class="navbar">
   <div class="left">
-      <button class="menu-button" (click)="toggleMenu()">&#9776;</button>
-      <app-menu [isOpen]="isOpen" [ngClass]="{ 'open': isOpen }"></app-menu>
+    <button class="menu-button" (click)="toggleMenu()">&#9776;</button>
+    <app-menu [isOpen]="isOpen" [ngClass]="{ 'open': isOpen }"></app-menu>
+    <section class="search-bar">
+      <img src="assets/svgs/search.svg">
       <input type="text" class="search-input" placeholder="'GTA V'">
+    </section>
   </div>
   <a href="/home"><i class="icon-group-7 home-link" style="font-size: 60px;"></i></a>
   <div class="right">
-      <span class="user-name"><span style="font-size: 12px;">Bienvenido a Role Play,</span> Carlitos</span>
+    <span class="user-name"><span style="font-size: 12px;">Bienvenido a Role Play,</span> Carlitos</span>
   </div>
 </nav>
 <app-progress-bar [progress]="0"></app-progress-bar>
