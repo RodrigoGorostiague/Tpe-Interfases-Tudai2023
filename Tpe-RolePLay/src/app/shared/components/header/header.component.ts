@@ -20,9 +20,9 @@ export class HeaderComponent {
       const target = event.target as HTMLElement;
       if (!target.closest('.menu') && !target.closest('.menu-button')) {
         this.isOpen = false;
+      }else{
+        this.isOpen = true;
       }
-    }else{
-      this.isOpen = true;
     }
   }
 
