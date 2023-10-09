@@ -16,7 +16,7 @@ export class ProgressBarComponent {
   startLoading() {
     const interval = 100; // Intervalo de actualización en milisegundos
     const totalSteps = 100;
-    const totalTime = 10000; // 10 segundos en milisegundos
+    const totalTime = 2000; // 10 segundos en milisegundos
     const stepSize = totalSteps / (totalTime / interval);
 
     const loadingInterval = setInterval(() => {

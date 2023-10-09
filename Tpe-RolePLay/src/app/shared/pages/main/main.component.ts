@@ -8,25 +8,24 @@ import { Component } from '@angular/core';
 export class MainComponent {
   loading: boolean = true;
   progress: number = 0;
-  textRotation: string = 'rotate(0deg)'; // Inicialmente sin rotación
+  textRotation: string = 'rotate(0deg)';
   phrases: string[] = [
     '¡Prepárate para la aventura!',
     'Explora mundos virtuales',
     'Conviértete en un héroe',
     'Descubre nuevos desafíos',
-    // Agrega más frases relacionadas a videojuegos aquí
   ];
   currentPhraseIndex: number = 0;
   ngOnInit() {
     this.startLoading();
     setInterval(() => {
       this.currentPhraseIndex = (this.currentPhraseIndex + 1) % this.phrases.length;
-    }, 2000); // Cambiar la frase cada 2 segundos (ajusta el tiempo según desees)
+    }, 2000);
   }
   startLoading() {
-    const interval = 100; // Intervalo de actualización en milisegundos
+    const interval = 100;
     const totalSteps = 100;
-    const totalTime = 10000; // 10 segundos en milisegundos
+    const totalTime = 2000;
     const stepSize = totalSteps / (totalTime / interval);
 
     const loadingInterval = setInterval(() => {
