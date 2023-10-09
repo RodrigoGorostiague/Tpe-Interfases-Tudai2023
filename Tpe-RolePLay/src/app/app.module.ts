@@ -19,6 +19,10 @@ import { SliderCarrerasComponent } from './shared/components/slider-carreras/sli
 import { GameTabComponent } from './shared/pages/game-tab/game-tab.component';
 import { ShareModalComponent } from './shared/components/share-modal/share-modal.component';
 import { ComentarioComponent } from './shared/components/comentario/comentario.component';
+import { SliderComponent } from './shared/components/slider/slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { WeeklySuggestsComponent } from './shared/components/weekly-suggests/weekly-suggests.component';
 
 @NgModule({
   declarations: [
@@ -37,13 +41,17 @@ import { ComentarioComponent } from './shared/components/comentario/comentario.c
     SliderCarrerasComponent,
     GameTabComponent,
     ShareModalComponent,
-    ComentarioComponent
+    ComentarioComponent,
+    SliderComponent,
+    WeeklySuggestsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

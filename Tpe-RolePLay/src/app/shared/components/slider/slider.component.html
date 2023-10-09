@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <carousel>
+                <slide *ngFor="let image of images">
+                    <a href="{{image.href}}"><img [src]="image.url" alt="{{ image.alt }}" class="banner-image"></a> 
+                </slide>
+            </carousel>
+        </div>
+    </div>
+</div>
