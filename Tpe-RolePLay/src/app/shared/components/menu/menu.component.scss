@@ -37,6 +37,10 @@ li {
 .game-categories li{
   font-size: 12px;
 }
+.game-categories{
+  height: 420px;
+  overflow-y: scroll;
+}
 a, a:visited{
   color:#ffffff;
   text-decoration: none;
