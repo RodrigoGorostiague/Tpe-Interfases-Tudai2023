@@ -1,10 +1,22 @@
 <app-header></app-header>
 <div class="background-container">
-  <div *ngIf="loading">
+  <div *ngIf="loading" class="loading-container">
     <div class="spinner"></div>
     <div class="phrase-container" [style.transform]="textRotation">
       {{ phrases[currentPhraseIndex] }}
     </div>
   </div>
-  <router-outlet *ngIf="!loading"></router-outlet>
+  <router-outlet *ngIf="!loading" class="main-container">
+    <app-weekly-suggests></app-weekly-suggests>
+    <section class="sliders">
+      <h2>Deportes</h2>
+      <app-slider-deportes></app-slider-deportes>
+      <h2>Puzzle</h2>
+      <app-slider-puzzle></app-slider-puzzle>
+      <h2>Acción</h2>
+      <app-slider-accion></app-slider-accion>
+      <h2>Carreras</h2>
+      <app-slider-carreras></app-slider-carreras>
+    </section>
+  </router-outlet>
 </div>

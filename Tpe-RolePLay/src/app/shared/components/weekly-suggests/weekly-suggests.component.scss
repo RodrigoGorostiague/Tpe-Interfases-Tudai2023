@@ -1,0 +1,48 @@
+.suggests-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 30px;
+    border-radius: 12px;
+    background: #000;
+    width: 1254px;
+}
+
+.logo {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.logo img {
+    width: 240px;
+    height: 185px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1:first-child,
+h1:last-child {
+    font-size: 32px;
+    color: #FFF;
+}
+
+.red {
+    color: #FE322E;
+}
+
+.green {
+    color: #7DDA57;
+}
+
+.blue {
+    color: #3BB5FB;
+}
+
+.red,
+.green,
+.blue {
+    font-size: 50px;
+}

@@ -1,18 +1,23 @@
 .menu {
   position: fixed;
   top: 0;
-  left: -300px; /* Inicialmente oculto fuera de la pantalla */
-  width: 250px;
+  left: -350px;
+  width: 300px;
   height: 100%;
   background-color: #333;
   color: #fff;
   padding: 20px;
-  transition: left 0.3s ease; /* Transición suave para el desplazamiento */
+  transition: left 0.3s ease;
   z-index: 999;
+}
+button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .open {
-  left: 0; /* Cuando está abierto, se desplaza hacia la izquierda */
+  left: 0;
 }
 
 ul {
@@ -32,3 +37,8 @@ li {
 .game-categories li{
   font-size: 12px;
 }
+a, a:visited{
+  color:#ffffff;
+  text-decoration: none;
+}
+
