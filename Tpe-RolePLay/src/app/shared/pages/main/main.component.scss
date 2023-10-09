@@ -68,3 +68,10 @@ h2 {
   line-height: normal;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 600px) {
+  .sliders{
+    justify-content: end;
+    align-items: end;
+  }
+}

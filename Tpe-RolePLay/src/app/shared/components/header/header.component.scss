@@ -90,3 +90,12 @@
 a:visited {
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .search-bar{
+    width: 300px;
+  }
+  .right{
+    display: none;
+  }
+}

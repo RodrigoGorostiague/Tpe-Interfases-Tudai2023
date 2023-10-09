@@ -46,3 +46,32 @@ h1:last-child {
 .blue {
     font-size: 50px;
 }
+
+@media screen and (max-width: 600px) {
+    .suggests-container {
+        width: 478px;
+        flex-direction: column;
+    }
+
+    h1:first-child,
+    h1:last-child {
+        font-size: 16px;
+        color: #FFF;
+    }
+
+    .red,
+    .green,
+    .blue {
+        font-size: 24px;
+    }
+    .logo {
+        top: 45px;
+        right: 15px;
+        left: auto;
+    }
+    
+    .logo img {
+        width: 165px;
+        height: 127px;
+    }
+}
