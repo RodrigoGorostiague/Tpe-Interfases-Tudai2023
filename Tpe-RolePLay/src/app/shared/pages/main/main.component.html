@@ -3,7 +3,7 @@
   <div *ngIf="loading" class="loading-container">
     <div class="spinner"></div>
     <div class="phrase-container" [style.transform]="textRotation">
-      {{ phrases[currentPhraseIndex] }}
+      {{ phrases[currentPhraseIndex] }} {{ progress }}%
     </div>
   </div>
   <router-outlet *ngIf="!loading" class="main-container">
