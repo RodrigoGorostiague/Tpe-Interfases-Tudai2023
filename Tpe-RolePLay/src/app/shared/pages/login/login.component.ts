@@ -10,8 +10,8 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent {
   loginForm = this.fb.group({
-    email: ['', Validators.required],
-    password: ['', Validators.required]
+    email: ['user@user.com', Validators.required],
+    password: ['user', Validators.required]
   });
   valido!: boolean;
   error!: boolean;
