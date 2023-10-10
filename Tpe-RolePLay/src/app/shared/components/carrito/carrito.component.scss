@@ -1,0 +1,68 @@
+.toggle-button {
+    border: none;
+    background-color: rgb(47, 141, 47);
+    padding: 2px;
+    border-radius: 8px 0 0 8px;
+    position: absolute;
+    top: 75px;
+    left: -40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+.carrito-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow-wrap: normal;
+}
+
+.carrito {
+    background-color: #454545;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toggle-button:hover,
+.totalycomprar button:hover {
+    background-color: #45a049;
+}
+
+.toggle-button:active,
+.totalycomprar button:active {
+    background-color: #3e8e41;
+}
+
+.carrito-container {
+    width: 250px;
+    background-color: #454545;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+.carrito-visible {
+    transform: translateX(0);
+}
+
+.totalPrice {
+    position: absolute;
+    bottom: 8px;
+}
+
+h2 {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
