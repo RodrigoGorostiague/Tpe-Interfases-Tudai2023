@@ -1,0 +1,10 @@
+<div class="carrito-container" [ngClass]="{'carrito-visible': carritoVisible}">
+    <button class="toggle-button" (click)="toggleCarrito()"><img src="assets/svgs/cart.svg"></button>
+    <div class="carrito">
+        <h2>Carrito</h2>
+        <hr>
+        <div class="lista-productos-carrito">
+        </div>
+        <h2 class="totalPrice">Total:</h2>
+    </div>
+</div>

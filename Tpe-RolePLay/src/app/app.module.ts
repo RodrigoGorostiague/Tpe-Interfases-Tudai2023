@@ -23,6 +23,8 @@ import { SliderComponent } from './shared/components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { WeeklySuggestsComponent } from './shared/components/weekly-suggests/weekly-suggests.component';
+import { CarritoComponent } from './shared/components/carrito/carrito.component';
+import { PerfilMenuComponent } from './shared/components/perfil-menu/perfil-menu.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { WeeklySuggestsComponent } from './shared/components/weekly-suggests/wee
     ShareModalComponent,
     ComentarioComponent,
     SliderComponent,
-    WeeklySuggestsComponent
+    WeeklySuggestsComponent,
+    CarritoComponent,
+    PerfilMenuComponent
   ],
   imports: [
     BrowserModule,

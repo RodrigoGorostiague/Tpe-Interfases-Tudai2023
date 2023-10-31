@@ -3,11 +3,11 @@
   <div *ngIf="loading" class="loading-container">
     <div class="spinner"></div>
     <div class="phrase-container" [style.transform]="textRotation">
-      {{ phrases[currentPhraseIndex] }}
+      {{ phrases[currentPhraseIndex] }} {{ progress }}%
     </div>
   </div>
   <router-outlet *ngIf="!loading" class="main-container">
-    <app-weekly-suggests></app-weekly-suggests>
+    <div class="suggests-container"><app-weekly-suggests></app-weekly-suggests></div>
     <section class="sliders">
       <h2>Deportes</h2>
       <app-slider-deportes></app-slider-deportes>
@@ -18,5 +18,6 @@
       <h2>Carreras</h2>
       <app-slider-carreras></app-slider-carreras>
     </section>
+    <app-carrito></app-carrito>
   </router-outlet>
 </div>

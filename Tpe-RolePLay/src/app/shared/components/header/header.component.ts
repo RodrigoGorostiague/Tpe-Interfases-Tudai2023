@@ -7,12 +7,15 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   isOpen = false;
+  isOpenPerfil = false;
   progress!: number;
 
   toggleMenu() {
     this.isOpen = !this.isOpen;
   }
-
+  togglePerfilMenu() {
+    this.isOpenPerfil = !this.isOpenPerfil;
+  }
   @HostListener('document:click', ['$event'])
   closeMenuOnClickOutside(event: Event) {
     console.log(this.isOpen);
@@ -20,11 +23,20 @@ export class HeaderComponent {
       const target = event.target as HTMLElement;
       if (!target.closest('.menu') && !target.closest('.menu-button')) {
         this.isOpen = false;
-      }
-      else{
+      }else{
         this.isOpen = true;
+      }
+      if (this.isOpenPerfil) {
+        const target = event.target as HTMLElement;
+        if (!target.closest('.menu') && !target.closest('.avatar')) {
+          this.isOpenPerfil = false;
+        }else{
+          this.isOpenPerfil = true;
+        }
       }
     }
   }
+
+
 
 }

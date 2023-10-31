@@ -14,16 +14,16 @@ export class ProgressBarComponent {
   }
 
   startLoading() {
-    const interval = 100; // Intervalo de actualización en milisegundos
+    const interval = 100;
     const totalSteps = 100;
-    const totalTime = 2000; // 10 segundos en milisegundos
+    const totalTime = 5000;
     const stepSize = totalSteps / (totalTime / interval);
 
     const loadingInterval = setInterval(() => {
       this.progress += stepSize;
       if (this.progress >= 100) {
         clearInterval(loadingInterval);
-        this.loading = false; // Ocultar el spinner cuando la carga esté al 100%
+        this.loading = false;
       }
     }, interval);
   }

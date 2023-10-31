@@ -1,13 +1,13 @@
 .menu {
   position: fixed;
   top: 0;
-  left: -350px;
-  width: 300px;
-  height: 100%;
+  top: -350px;
+  width: 350px;
+  height: 25%;
   background-color: #333;
   color: #fff;
   padding: 20px;
-  transition: left 0.3s ease;
+  transition: top 0.4s ease;
   z-index: 999;
 }
 button{
@@ -17,7 +17,7 @@ button{
 }
 
 .open {
-  left: 0;
+  top: 0;
 }
 
 ul {

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 55vh;
+  height: 100vh;
 }
 
 /* Estilo de la tarjeta */
@@ -44,7 +44,6 @@
 .btn-secondary:hover {
   background-color: #f8f8f8;
   color: #295454;
-  padding: 4px 20px;
   border-left: 3px solid  orangered,;
   padding-left: 7px;
   transition: all 0.2s ease;
@@ -79,4 +78,11 @@ label {
 }
 .hint{
   color: red;
+}
+.social-icons {
+  font-size: 5px;
+  color: #295454;
+}
+a img {
+  width: 45px;
 }

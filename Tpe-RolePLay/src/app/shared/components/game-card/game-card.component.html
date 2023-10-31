@@ -7,6 +7,9 @@
     </div>
     <section class="card-body">
         <h3 class="card-name">{{ name }}</h3>
-        <img src="assets/svgs/addtocart.svg">
+          <div *ngIf="finalPrice.toUpperCase() === 'GRATIS'" class="play-button">
+            <div class="arrow"></div>
+        </div>
+        <img  *ngIf="finalPrice.toUpperCase() !== 'GRATIS'" src="assets/svgs/addtocart.svg" class="cart-img">
     </section>
 </div>

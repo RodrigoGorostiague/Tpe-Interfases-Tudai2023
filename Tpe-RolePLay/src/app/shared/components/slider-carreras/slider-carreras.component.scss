@@ -37,3 +37,8 @@
 *::-webkit-scrollbar-thumb:active {
     background-color: #000000;
 }
+@media screen and (max-width: 600px) {
+    .slider-container {
+        width: 500px;
+    }
+}

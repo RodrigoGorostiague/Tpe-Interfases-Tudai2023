@@ -1,5 +1,12 @@
-.banner-image{
+.banner-image {
     width: 768px;
     height: 432px;
     border-radius: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .banner-image {
+        width: 430px;
+        height: 242px;
+    }
 }

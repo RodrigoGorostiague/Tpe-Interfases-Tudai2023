@@ -25,7 +25,7 @@ export class MainComponent {
   startLoading() {
     const interval = 100;
     const totalSteps = 100;
-    const totalTime = 2000;
+    const totalTime = 5000;
     const stepSize = totalSteps / (totalTime / interval);
 
     const loadingInterval = setInterval(() => {

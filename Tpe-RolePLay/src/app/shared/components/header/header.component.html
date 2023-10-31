@@ -7,9 +7,12 @@
       <input type="text" class="search-input" placeholder="'GTA V'">
     </section>
   </div>
-  <a href="/home"><img src="assets/images/Logo.png" style="width: 75px;"></a>
+  <a href="/Tpe-Interfases-Tudai2023/home"><img src="assets/images/Logo.png" style="width: 100px;"></a>
   <div class="right">
-    <span class="user-name"><span style="font-size: 12px;">Bienvenido a Role Play,</span> Carlitos</span>
+
+    <button class="avatar" (click)="togglePerfilMenu()"></button>
+    <app-perfil-menu [isOpenPerfil]="isOpenPerfil" [ngClass]="{ 'open': isOpenPerfil }"></app-perfil-menu>
+    <span class="user-name"><span style="font-size: 12px;">Bienvenido,</span> Carlitos</span>
   </div>
 </nav>
 <app-progress-bar [progress]="0"></app-progress-bar>
