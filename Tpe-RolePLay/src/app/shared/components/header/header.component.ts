@@ -21,8 +21,9 @@ export class HeaderComponent {
       if (!target.closest('.menu') && !target.closest('.menu-button')) {
         this.isOpen = false;
       }
-    }else{
-      this.isOpen = true;
+      else{
+        this.isOpen = true;
+      }
     }
   }
 
