@@ -1,0 +1,123 @@
+.game-container {
+    position: relative;
+}
+
+.connect-four-board {
+    border-collapse: collapse;
+    background-color: #D9D9D9;
+    border-radius: 0 0 8px 8px;
+    width: 768px;
+
+    td {
+        width: 75px;
+        padding: 0;
+        border: 0;
+
+        .cell {
+            width: 75px;
+            height: 75px;
+            background-color: #2955C8;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .piece {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+.board-container {
+    background-color: #2955C8;
+    border-radius: 8px;
+    display: flex;
+    padding-bottom: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tool-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    width: 768px;
+    padding: 10px 0 10px 0;
+}
+
+.tool-bar span {
+    display: flex;
+    align-items: center;
+}
+
+.tool-bar span img {
+    width: 50px;
+    height: 50px;
+}
+
+.cell {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.player1 {
+    background-color: #41BCD7;
+}
+
+.player2 {
+    background-color: #571F58;
+}
+
+.piece img,
+.turnImage {
+    border-radius: 59.5px;
+    width: 71.4px;
+    height: 71.4px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@keyframes fall-from-top {
+    from {
+        transform: translateY(-400%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.piece img.fall-animation {
+    animation-name: fall-from-top;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}

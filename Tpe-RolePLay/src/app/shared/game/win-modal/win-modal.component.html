@@ -1,0 +1,6 @@
+<div *ngIf="modalService.isWinModalVisible" class="modal-background">
+    <div class="modal-content">
+        <h2>{{ gameBoard.currentPlayer }} ganó</h2>
+        <button (click)="restartGame()">Reiniciar el juego</button>
+    </div>
+</div>

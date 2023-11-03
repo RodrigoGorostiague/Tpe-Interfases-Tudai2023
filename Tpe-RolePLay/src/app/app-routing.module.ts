@@ -20,7 +20,7 @@ const routes: Routes = [
     { path: 'accion', component: SliderAccionComponent },
     { path: 'puzzle', component: SliderPuzzleComponent }
   ]},
-  { path: '4-en-linea', component: GameTabComponent, canActivate: [AuthGuard]},
+  { path: '4-en-linea', component: GameTabComponent},
   { path: '**', component: LoginComponent  },
 ];
 

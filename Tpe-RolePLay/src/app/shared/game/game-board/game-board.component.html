@@ -1,0 +1,34 @@
+<div class="game-container">
+    <div class="board-container">
+        <div class="tool-bar">
+            <select (change)="handleGameMode($event)">
+                <option value="4x6">3 en línea</option>
+                <option value="5x8" selected>4 en línea</option>
+                <option value="6x10">5 en línea</option>
+                <option value="7x12">6 en línea</option>
+            </select>
+            <span>Turno de:
+                <img class="turnImage" *ngIf="currentPlayer == player1Ficha" src="../../assets/massa.jpg">
+                <img class="turnImage" *ngIf="currentPlayer == player2Ficha" src="../../assets/milei.jpg">
+            </span>
+            <button (click)="resetGame()">Reiniciar</button>
+        </div>
+        <table class="connect-four-board">
+            <tr *ngFor="let row of rows; let i = index">
+                <td *ngFor="let col of cols; let j = index" (click)="dropPiece(j)">
+                    <div class="cell" id="cell-{{i}}-{{j}}" *ngIf="board && board[i]">
+                        <div class="piece" *ngIf="board[i][j] === player1Ficha"
+                            [ngClass]="{'player1': true, 'player2': false}">
+                            <img src="../../assets/massa.jpg" alt="Ficha Massa" class="fall-animation">
+                        </div>
+                        <div class="piece" *ngIf="board[i][j] === player2Ficha"
+                            [ngClass]="{'player1': false, 'player2': true}">
+                            <img src="../../assets/milei.jpg" alt="Ficha Milei" class="fall-animation">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <app-win-modal></app-win-modal>
+</div>

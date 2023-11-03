@@ -25,6 +25,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { WeeklySuggestsComponent } from './shared/components/weekly-suggests/weekly-suggests.component';
 import { CarritoComponent } from './shared/components/carrito/carrito.component';
 import { PerfilMenuComponent } from './shared/components/perfil-menu/perfil-menu.component';
+import { GameBoardComponent } from './shared/game/game-board/game-board.component';
+import { WinModalComponent } from './shared/game/win-modal/win-modal.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { PerfilMenuComponent } from './shared/components/perfil-menu/perfil-menu
     SliderComponent,
     WeeklySuggestsComponent,
     CarritoComponent,
-    PerfilMenuComponent
+    PerfilMenuComponent,
+    GameBoardComponent,
+    WinModalComponent
   ],
   imports: [
     BrowserModule,
