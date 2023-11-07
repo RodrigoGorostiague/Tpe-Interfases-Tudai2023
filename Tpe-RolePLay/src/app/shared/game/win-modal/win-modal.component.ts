@@ -8,8 +8,12 @@ import { GameBoardComponent } from '../game-board/game-board.component';
   styleUrls: ['./win-modal.component.scss']
 })
 export class WinModalComponent {
-  constructor(public modalService: ModalService, public gameBoard: GameBoardComponent) {}
+  constructor(public modalService: ModalService, public gameBoard: GameBoardComponent) { }
 
+  isTie(): boolean {
+    return this.gameBoard.isGameTied;
+  }
+  
   restartGame() {
     this.gameBoard.resetGame();
     this.modalService.closeWinModal();

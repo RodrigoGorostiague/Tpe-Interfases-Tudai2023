@@ -17,6 +17,7 @@ export class GameBoardComponent {
   rows: number[] = [];
   cols: number[] = [];
 
+  isGameTied: boolean = false;
 
   constructor(private modalService: ModalService) {
     this.connectN = 4;
@@ -46,16 +47,15 @@ export class GameBoardComponent {
   }
 
   dropPiece(column: number): void {
-    if (this.isGameOver) {
+    if (this.isGameOver || this.isGameTied) {
       return;
     }
-
+    
     const row = this.findAvailableRow(column);
 
     if (row === -1) {
       return;
     }
-
     this.board[row][column] = this.currentPlayer;
 
     if (this.checkForWin(row, column)) {
@@ -63,6 +63,7 @@ export class GameBoardComponent {
     } else {
       this.currentPlayer = this.currentPlayer === this.player1Ficha ? this.player2Ficha : this.player1Ficha;
     }
+    this.checkForTie(); 
   }
   findAvailableRow(column: number): number {
     for (let row = this.rows.length - 1; row >= 0; row--) {
@@ -91,8 +92,33 @@ export class GameBoardComponent {
         return true;
       }
     }
+    let hasEmptyCells = this.board.some(row => row.some(cell => cell === ''));
+    if (!hasEmptyCells) {
+      this.showTieModal();
+      return true;
+    }
 
     return false;
+  }
+
+  checkForTie(): void {
+    let totalMoves = 0;
+    for (let i = 0; i < this.rows.length; i++) {
+      for (let j = 0; j < this.cols.length; j++) {
+        if (this.board[i][j] !== '') {
+          totalMoves++;
+        }
+      }
+    }
+
+    // El juego está empatado si se han realizado todos los movimientos posibles y no hay un ganador.
+    if (totalMoves === this.rows.length * this.cols.length && !this.isGameOver) {
+      this.isGameTied = true;
+    }
+  }
+
+  showTieModal(): void {
+    this.modalService.showWinModal('Empate');
   }
 
   countInDirection(row: number, col: number, rowDir: number, colDir: number, player: string): number {
