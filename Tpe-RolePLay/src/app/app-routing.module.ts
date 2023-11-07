@@ -14,13 +14,13 @@ const routes: Routes = [
   { path: '', component: LoginComponent  },
   { path: 'login', component: LoginComponent  },
   { path: 'singin', component: SinginComponent  },
-  { path: 'home', component: MainComponent, canActivate: [AuthGuard], children: [
+  { path: 'Tpe-Interfases-Tudai2023/home', component: MainComponent, canActivate: [AuthGuard], children: [
     { path: 'deportes', component: SliderDeportesComponent },
     { path: 'carreras', component: SliderCarrerasComponent },
     { path: 'accion', component: SliderAccionComponent },
     { path: 'puzzle', component: SliderPuzzleComponent }
   ]},
-  { path: '4-en-linea', component: GameTabComponent},
+  { path: 'Tpe-Interfases-Tudai2023/4-en-linea', component: GameTabComponent},
   { path: '**', component: LoginComponent  },
 ];
 

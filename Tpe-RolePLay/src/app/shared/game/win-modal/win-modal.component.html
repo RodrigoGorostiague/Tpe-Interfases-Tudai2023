@@ -1,6 +1,8 @@
 <div *ngIf="modalService.isWinModalVisible" class="modal-background">
     <div class="modal-content">
-        <h2>{{ gameBoard.currentPlayer }} ganó</h2>
-        <button (click)="restartGame()">Reiniciar el juego</button>
+        <h2>{{ gameBoard.currentPlayer }} ganó y se quedó con el sillón de Rivadavia</h2>
+        <img class="turnImage" *ngIf="gameBoard.currentPlayer == gameBoard.player1Ficha" src="../../assets/massa.jpg">
+        <img class="turnImage" *ngIf="gameBoard.currentPlayer == gameBoard.player2Ficha" src="../../assets/milei.jpg">
+        <button (click)="restartGame()">Reiniciar juego</button>
     </div>
 </div>

@@ -64,7 +64,6 @@ export class GameBoardComponent {
       this.currentPlayer = this.currentPlayer === this.player1Ficha ? this.player2Ficha : this.player1Ficha;
     }
   }
-
   findAvailableRow(column: number): number {
     for (let row = this.rows.length - 1; row >= 0; row--) {
       if (this.board[row][column] === '') {

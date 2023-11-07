@@ -1,37 +1,50 @@
 .modal-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-  }
-    
-    .modal-content {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-    }
-    
-    .modal-content h2 {
-      margin-bottom: 20px;
-    }
-    
-    .modal-content button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      background-color: #4caf50;
-      color: white;
-    }
-    
-    .modal-content button:hover {
-      background-color: #45a049;
-    }
-    
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+}
+
+.modal-content button:hover {
+  background-color: #45a049;
+}
+
+.turnImage {
+  display: flex;
+  border-radius: 59.5px;
+  width: 71.4px;
+  height: 71.4px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
